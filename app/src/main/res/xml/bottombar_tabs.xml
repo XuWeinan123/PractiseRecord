@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_article"
+        icon="@mipmap/tab_article"
+        title="文章" />
+    <tab
+        id="@+id/tab_works"
+        icon="@mipmap/tab_works"
+        title="作品" />
+    <tab
+        id="@+id/tab_myself"
+        icon="@mipmap/tab_myself"
+        title="作者" />
+</tabs>

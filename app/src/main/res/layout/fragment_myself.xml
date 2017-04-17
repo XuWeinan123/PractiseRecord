@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.xwn.practiserecord.fragment.MyselfFragment">
+
+    <ImageView
+        android:id="@+id/author_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:src="@mipmap/author_avatar02" />
+
+    <TextView
+        android:id="@+id/author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/author_avatar"
+        android:layout_below="@+id/author_avatar"
+        android:layout_marginTop="24dp"
+        android:text="徐炜楠"
+        android:textColor="#555555"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/author_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/author_name"
+        android:layout_below="@+id/author_name"
+        android:layout_marginTop="16dp"
+        android:paddingRight="16dp"
+        android:text="这是一个用于承载我实习记忆的APP"
+        android:textColor="#888888"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/author_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/author_introduce"
+        android:layout_below="@id/author_introduce"
+        android:layout_marginTop="16dp"
+        android:text="个人博客："
+        android:textColor="#888888"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/author_website_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/author_website"
+        android:layout_toRightOf="@id/author_website"
+        android:text="aaronxublog.wordpress.com"
+        android:textColorLink="#2888ff"
+        android:textSize="14sp"
+        android:autoLink="web"/>
+    <TextView
+        android:id="@+id/author_alipay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/author_website"
+        android:layout_below="@id/author_website"
+        android:layout_marginTop="8dp"
+        android:text="个人电话："
+        android:textColor="#888888"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/author_alipay_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/author_alipay"
+        android:layout_toRightOf="@id/author_alipay"
+        android:text="+86 17196690156"
+        android:textColorLink="#2888ff"
+        android:textSize="14sp"
+        android:autoLink="phone"/>
+    <TextView
+        android:id="@+id/author_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/author_alipay"
+        android:layout_below="@id/author_alipay"
+        android:layout_marginTop="8dp"
+        android:text="个人微信："
+        android:textColor="#888888"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/author_wechat_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/author_wechat"
+        android:layout_toRightOf="@id/author_wechat"
+        android:text="woshixwn123"
+        android:textColor="#2888ff"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="徐炜楠"
+            android:textColor="#050505"
+            android:textSize="23dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:src="@mipmap/author_avatar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="43dp"
+            android:text="新闻与信息传播学院	传播1401班"
+            android:textColor="#787878"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

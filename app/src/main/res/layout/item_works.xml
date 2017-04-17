@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:clickable="true"
+    android:background="@drawable/selector_bg">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/doc_icon"
+        android:tint="@color/textRegular"
+        android:id="@+id/works_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/works_image"
+        android:layout_marginTop="8dp"
+        android:text="文件名"
+        android:textColor="@color/textRegular"
+        android:textSize="16sp"
+        android:id="@+id/works_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:text="文件创建时间"
+        android:textColor="@color/textLittle"
+        android:id="@+id/works_create_time"
+        android:layout_below="@+id/works_name"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
