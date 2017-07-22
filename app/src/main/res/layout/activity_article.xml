@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
+        android:paddingBottom="16dp"
         android:orientation="vertical"
         android:background="#ffffff"
         >
@@ -51,7 +52,8 @@
         android:layout_marginTop="16dp"
         android:textSize="16sp"
         android:lineSpacingMultiplier="1.2"
-        android:textIsSelectable="true"/>
+        android:textIsSelectable="true"
+        />
     </LinearLayout>
 
 </ScrollView>

@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.xwn.practiserecord.bean.ArticleContentBean;
 import com.xwn.practiserecord.util.DensityUtil;
+import com.zzhoujay.richtext.RichText;
 
 import java.util.List;
 
@@ -53,7 +54,8 @@ public class ArticleActivity extends AppCompatActivity {
             public void done(List<ArticleContentBean> list, BmobException e) {
                 if (e==null){
                     articleHtmlContent = list.get(0).getArticleContent();
-                    articleContent.setText(Html.fromHtml(articleHtmlContent));
+                    RichText.fromMarkdown(articleHtmlContent).into(articleContent);
+                    //articleContent.setText(Html.fromHtml(articleHtmlContent));
                 }
             }
         });
